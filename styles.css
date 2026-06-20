@@ -274,12 +274,118 @@ h2 {
 }
 
 .section-copy p,
+.section-heading p,
 .motion p,
 .trust p {
   max-width: 690px;
   color: var(--muted);
   font-size: 18px;
   line-height: 1.58;
+}
+
+.library {
+  padding-bottom: clamp(54px, 7vw, 88px);
+}
+
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.question-card {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 16px 46px rgba(16, 24, 40, 0.07);
+}
+
+.question-card.locked {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.question-topline,
+.topic-row,
+.entitlement-band {
+  display: flex;
+  align-items: center;
+}
+
+.question-topline {
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 22px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.question-topline span {
+  color: var(--teal);
+}
+
+.question-topline b {
+  color: var(--ink);
+  font-size: 10px;
+}
+
+.question-card h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  line-height: 1.08;
+}
+
+.question-card p {
+  margin-bottom: 18px;
+  color: var(--muted);
+  line-height: 1.48;
+}
+
+.topic-row {
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: auto;
+}
+
+.topic-row span {
+  max-width: 100%;
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #f8f4ee;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.entitlement-band {
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 18px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.entitlement-band div {
+  display: grid;
+  gap: 5px;
+}
+
+.entitlement-band strong {
+  font-size: 18px;
+}
+
+.entitlement-band span {
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.45;
 }
 
 .workflow-list {
@@ -371,7 +477,8 @@ footer span {
   .split,
   .motion,
   .trust,
-  .gallery {
+  .gallery,
+  .question-grid {
     grid-template-columns: 1fr;
   }
 
@@ -399,6 +506,11 @@ footer span {
 
   .trust .primary-action {
     justify-self: start;
+  }
+
+  .entitlement-band {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 

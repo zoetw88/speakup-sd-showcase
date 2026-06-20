@@ -25,6 +25,7 @@
         <span>SpeakUp SD</span>
       </a>
       <nav>
+        <a href="#library">Question bank</a>
         <a href="#practice">Practice</a>
         <a href="#evidence">Evidence</a>
         <a href="#trust">Trust</a>
@@ -38,20 +39,20 @@
           <p class="eyebrow">Voice-first system design practice</p>
           <h1 id="hero-title">Turn system design anxiety into reps.</h1>
           <p class="lede">
-            SpeakUp SD turns system design prep into a repeatable loop: pick a realistic prompt,
-            explain it aloud, draw the architecture, and review an AI report grounded in what you actually did.
+            Browse real system design prompts first, then turn the ones that matter into a voice mock,
+            whiteboard session, and AI coaching report.
           </p>
           <div class="actions">
             <a class="primary-action" href="https://speakup-sd.vercel.app">Start practice</a>
-            <a class="secondary-action" href="#evidence">See the product</a>
+            <a class="secondary-action" href="#library">Browse questions</a>
           </div>
         </div>
 
         <figure class="hero-media">
-          <img src="./assets/product-flow.gif" alt="Fresh production screenshots from SpeakUp SD showing practice, whiteboard, and reports screens." />
+          <img src="./assets/product-flow.gif" alt="Fresh production screenshots from SpeakUp SD showing question search, interactive interview, and recording consent screens." />
           <figcaption>
             <strong>Live product UI from production</strong>
-            <span>Fresh screenshots from the practice flow, whiteboard surface, and reports area.</span>
+            <span>Fresh screenshots from question browsing, AI mock setup, and the real recording consent flow.</span>
           </figcaption>
         </figure>
       </section>
@@ -59,18 +60,93 @@
       <section class="signal-strip" aria-label="Product signals">
         <div>
           <span>01</span>
-          <strong>Speak</strong>
-          <p>Practice explaining architecture decisions under interview-style pressure.</p>
+          <strong>Browse</strong>
+          <p>Preview a focused set of free questions before deciding what to practice.</p>
         </div>
         <div>
           <span>02</span>
-          <strong>Draw</strong>
-          <p>Capture services, APIs, data flow, memory, tools, and failure boundaries on a whiteboard.</p>
+          <strong>Unlock</strong>
+          <p>Paid users get the full system design bank, including AI-agent architecture prompts.</p>
         </div>
         <div>
           <span>03</span>
-          <strong>Review</strong>
-          <p>Use a scoring report to see readiness, gaps, and the next concrete practice target.</p>
+          <strong>Practice</strong>
+          <p>Turn any unlocked prompt into a voice mock, whiteboard, and report loop.</p>
+        </div>
+      </section>
+
+      <section id="library" class="section library">
+        <div class="section-heading">
+          <p class="eyebrow">Question Bank</p>
+          <h2>Some candidates want to inspect the questions before they practice.</h2>
+          <p>
+            SpeakUp SD separates browsing from training: free users can preview a small set of prompts,
+            while paid plans unlock the full library and AI mock capacity.
+          </p>
+        </div>
+        <div class="question-grid">
+          <article class="question-card unlocked">
+            <div class="question-topline">
+              <span>Free preview</span>
+              <b>Intermediate</b>
+            </div>
+            <h3>URL Shortener</h3>
+            <p>Design redirects, custom aliases, analytics, caching, and consistency trade-offs.</p>
+            <div class="topic-row">
+              <span>Redirects</span>
+              <span>Caching</span>
+              <span>Analytics</span>
+            </div>
+          </article>
+          <article class="question-card unlocked">
+            <div class="question-topline">
+              <span>Free preview</span>
+              <b>Intermediate</b>
+            </div>
+            <h3>Rate Limiter</h3>
+            <p>Design distributed limits for public APIs with shared counters, hot keys, and failure modes.</p>
+            <div class="topic-row">
+              <span>Token bucket</span>
+              <span>Redis</span>
+              <span>Hot keys</span>
+            </div>
+          </article>
+          <article class="question-card locked">
+            <div class="question-topline">
+              <span>Paid library</span>
+              <b>Advanced</b>
+            </div>
+            <h3>AI Agent System Design</h3>
+            <p>Design an AI agent platform with tools, memory, guardrails, evals, and safe termination.</p>
+            <div class="topic-row">
+              <span>Tools</span>
+              <span>Memory</span>
+              <span>Guardrails</span>
+            </div>
+          </article>
+          <article class="question-card locked">
+            <div class="question-topline">
+              <span>Paid library</span>
+              <b>Advanced</b>
+            </div>
+            <h3>Ticketing Flash Sale</h3>
+            <p>Design seat inventory, reservation holds, payment flow, queues, and concurrency control.</p>
+            <div class="topic-row">
+              <span>Inventory</span>
+              <span>Queueing</span>
+              <span>Payments</span>
+            </div>
+          </article>
+        </div>
+        <div class="entitlement-band">
+          <div>
+            <strong>Free</strong>
+            <span>Preview questions and try the practice loop.</span>
+          </div>
+          <div>
+            <strong>Starter / Pro / Elite</strong>
+            <span>Unlock the full question bank, AI mocks, scored reports, and deeper review capacity.</span>
+          </div>
         </div>
       </section>
 
@@ -87,7 +163,7 @@
         <div class="workflow-list">
           <article>
             <b>Prompt bank</b>
-            <span>Traditional distributed systems plus AI-agent scenarios with tools, memory, evals, and guardrails.</span>
+            <span>Free preview questions plus a paid full library across traditional distributed systems and AI-agent design.</span>
           </article>
           <article>
             <b>Voice mock</b>
@@ -103,21 +179,21 @@
       <section id="evidence" class="section">
         <div class="section-heading">
           <p class="eyebrow">Product Evidence</p>
-          <h2>The interface is built around the screens candidates actually use.</h2>
+          <h2>The GIF uses real product screens, not fake mockups.</h2>
         </div>
         <div class="gallery">
           <figure class="shot shot-large">
-            <img src="./assets/product-board.png" alt="SpeakUp SD whiteboard screen for architecture diagrams." />
+            <img src="./assets/product-question-bank.png" alt="SpeakUp SD real question browser showing AI Agent System search result." />
             <figcaption>
-              <strong>Live whiteboard screen</strong>
-              <span>The in-app board stays available while the candidate explains architecture and tradeoffs.</span>
+              <strong>Real question browser</strong>
+              <span>A production account searching the live topic picker for AI-agent system design prompts.</span>
             </figcaption>
           </figure>
           <figure class="shot">
-            <img src="./assets/product-reports.png" alt="SpeakUp SD live reports screen." />
+            <img src="./assets/product-interview-active.png" alt="SpeakUp SD real AI interview screen for AI Agent System." />
             <figcaption>
-              <strong>Live reports screen</strong>
-              <span>The reports area shows readiness, practice history, skill radar, and next-drill actions as records build up.</span>
+              <strong>Real AI mock screen</strong>
+              <span>The prompt becomes a timed interview with voice answer controls and the in-app whiteboard.</span>
             </figcaption>
           </figure>
         </div>
@@ -128,8 +204,8 @@
           <p class="eyebrow">End-to-end Flow</p>
           <h2>From prompt to spoken answer to report.</h2>
           <p>
-            SpeakUp SD is meant for candidates who do not just want more questions.
-            They need a loop that shows whether their explanation is getting clearer.
+            SpeakUp SD is meant for candidates who do not just want a giant list of questions.
+            They can browse first, then practice only the prompts that match their target role.
           </p>
         </div>
         <img src="./assets/product-flow.gif" alt="Animated GIF built from fresh production screenshots of the SpeakUp SD flow." />
