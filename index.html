@@ -14,7 +14,7 @@
       content="Voice-first system design practice with live product UI for mock practice, whiteboarding, reports, and readiness-focused feedback."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/product-flow.gif" />
+    <meta property="og:image" content="./assets/showcase-preview.png" />
     <link rel="icon" href="./assets/favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -48,13 +48,39 @@
           </div>
         </div>
 
-        <figure class="hero-media">
-          <img src="./assets/product-flow.gif" alt="Fresh production screenshots from SpeakUp SD showing question search, interactive interview, and recording consent screens." />
-          <figcaption>
-            <strong>Live product UI from production</strong>
-            <span>Fresh screenshots from question browsing, AI mock setup, and the real recording consent flow.</span>
-          </figcaption>
-        </figure>
+        <aside class="hero-library" aria-label="Question bank preview">
+          <div class="browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <b>Question bank</b>
+          </div>
+          <div class="library-search">Search: agent, rate limiter, ticketing...</div>
+          <article class="mini-question free">
+            <div>
+              <span>Free preview</span>
+              <h3>Rate Limiter</h3>
+              <p>Distributed API limits, shared counters, hot keys, and graceful failure modes.</p>
+            </div>
+            <b>Open</b>
+          </article>
+          <article class="mini-question locked">
+            <div>
+              <span>Paid library</span>
+              <h3>AI Agent System Design</h3>
+              <p>Tools, memory, guardrails, evaluation, and safe termination.</p>
+            </div>
+            <b>Locked</b>
+          </article>
+          <article class="mini-question locked">
+            <div>
+              <span>Paid library</span>
+              <h3>Ticketing Flash Sale</h3>
+              <p>Inventory holds, queues, payments, and concurrency control.</p>
+            </div>
+            <b>Locked</b>
+          </article>
+        </aside>
       </section>
 
       <section class="signal-strip" aria-label="Product signals">
@@ -179,23 +205,25 @@
       <section id="evidence" class="section">
         <div class="section-heading">
           <p class="eyebrow">Product Evidence</p>
-          <h2>The GIF uses real product screens, not fake mockups.</h2>
+          <h2>No raw topic screenshot on the marketing surface.</h2>
+          <p>
+            The production app screenshot is being refreshed after the new question-bank UI deploys.
+            Until then, this public page uses a clean commercial preview instead of an outdated topic picker.
+          </p>
         </div>
-        <div class="gallery">
-          <figure class="shot shot-large">
-            <img src="./assets/product-question-bank.png" alt="SpeakUp SD real question browser showing AI Agent System search result." />
-            <figcaption>
-              <strong>Real question browser</strong>
-              <span>A production account searching the live topic picker for AI-agent system design prompts.</span>
-            </figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="./assets/product-interview-active.png" alt="SpeakUp SD real AI interview screen for AI Agent System." />
-            <figcaption>
-              <strong>Real AI mock screen</strong>
-              <span>The prompt becomes a timed interview with voice answer controls and the in-app whiteboard.</span>
-            </figcaption>
-          </figure>
+        <div class="evidence-grid">
+          <article>
+            <b>Browse first</b>
+            <span>Users can inspect prompt titles, difficulty, and focus areas before starting a mock.</span>
+          </article>
+          <article>
+            <b>Free vs paid is visible</b>
+            <span>Free preview prompts are separated from the paid full library instead of hiding the business model.</span>
+          </article>
+          <article>
+            <b>AI-agent topics are clear</b>
+            <span>AI Agent System Design is framed as a system design prompt, not an ambiguous AI prompt feature.</span>
+          </article>
         </div>
       </section>
 
@@ -208,7 +236,12 @@
             They can browse first, then practice only the prompts that match their target role.
           </p>
         </div>
-        <img src="./assets/product-flow.gif" alt="Animated GIF built from fresh production screenshots of the SpeakUp SD flow." />
+        <div class="flow-stack">
+          <span>Browse question</span>
+          <span>Unlock full library</span>
+          <span>Run voice mock</span>
+          <span>Review report</span>
+        </div>
       </section>
 
       <section id="trust" class="section trust">
