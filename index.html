@@ -6,12 +6,12 @@
     <title>SpeakUp SD | AI System Design Interview Practice</title>
     <meta
       name="description"
-      content="SpeakUp SD is a voice-first system design interview practice product with live product UI for mock practice, whiteboarding, reports, and readiness-focused feedback."
+      content="SpeakUp SD is an AI interview practice product with a question bank across classic system design and AI system design."
     />
     <meta property="og:title" content="SpeakUp SD" />
     <meta
       property="og:description"
-      content="Voice-first system design practice with live product UI for mock practice, whiteboarding, reports, and readiness-focused feedback."
+      content="AI interviews with a serious question bank across system design and AI system design."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./assets/showcase-preview.png" />
@@ -27,231 +27,75 @@
       <nav>
         <a href="#library">Question bank</a>
         <a href="#practice">Practice</a>
-        <a href="#evidence">Evidence</a>
         <a href="#trust">Trust</a>
       </nav>
       <a class="header-action" href="https://speakup-sd.vercel.app">Open app</a>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero hero-simple" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Voice-first system design practice</p>
-          <h1 id="hero-title">Turn system design anxiety into reps.</h1>
+          <p class="eyebrow">AI interview for system design</p>
+          <h1 id="hero-title">AI interviews with a serious question bank.</h1>
           <p class="lede">
-            Browse real system design prompts first, then turn the ones that matter into a voice mock,
-            whiteboard session, and AI coaching report.
+            SpeakUp SD helps candidates practice across classic system design and AI system design.
+            Browse the question bank, choose a prompt, then run an AI interview with whiteboard and report.
           </p>
           <div class="actions">
-            <a class="primary-action" href="https://speakup-sd.vercel.app">Start practice</a>
-            <a class="secondary-action" href="#library">Browse questions</a>
-          </div>
-        </div>
-
-        <aside class="hero-library" aria-label="Question bank preview">
-          <div class="browser-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-            <b>Question bank</b>
-          </div>
-          <div class="library-search">Search: agent, rate limiter, ticketing...</div>
-          <article class="mini-question free">
-            <div>
-              <span>Free preview</span>
-              <h3>Rate Limiter</h3>
-              <p>Distributed API limits, shared counters, hot keys, and graceful failure modes.</p>
-            </div>
-            <b>Open</b>
-          </article>
-          <article class="mini-question locked">
-            <div>
-              <span>Paid library</span>
-              <h3>AI Agent System Design</h3>
-              <p>Tools, memory, guardrails, evaluation, and safe termination.</p>
-            </div>
-            <b>Locked</b>
-          </article>
-          <article class="mini-question locked">
-            <div>
-              <span>Paid library</span>
-              <h3>Ticketing Flash Sale</h3>
-              <p>Inventory holds, queues, payments, and concurrency control.</p>
-            </div>
-            <b>Locked</b>
-          </article>
-        </aside>
-      </section>
-
-      <section class="signal-strip" aria-label="Product signals">
-        <div>
-          <span>01</span>
-          <strong>Browse</strong>
-          <p>Preview a focused set of free questions before deciding what to practice.</p>
-        </div>
-        <div>
-          <span>02</span>
-          <strong>Unlock</strong>
-          <p>Paid users get the full system design bank, including AI-agent architecture prompts.</p>
-        </div>
-        <div>
-          <span>03</span>
-          <strong>Practice</strong>
-          <p>Turn any unlocked prompt into a voice mock, whiteboard, and report loop.</p>
-        </div>
-      </section>
-
-      <section id="library" class="section library">
-        <div class="section-heading">
-          <p class="eyebrow">Question Bank</p>
-          <h2>Some candidates want to inspect the questions before they practice.</h2>
-          <p>
-            SpeakUp SD separates browsing from training: free users can preview a small set of prompts,
-            while paid plans unlock the full library and AI mock capacity.
-          </p>
-        </div>
-        <div class="question-grid">
-          <article class="question-card unlocked">
-            <div class="question-topline">
-              <span>Free preview</span>
-              <b>Intermediate</b>
-            </div>
-            <h3>URL Shortener</h3>
-            <p>Design redirects, custom aliases, analytics, caching, and consistency trade-offs.</p>
-            <div class="topic-row">
-              <span>Redirects</span>
-              <span>Caching</span>
-              <span>Analytics</span>
-            </div>
-          </article>
-          <article class="question-card unlocked">
-            <div class="question-topline">
-              <span>Free preview</span>
-              <b>Intermediate</b>
-            </div>
-            <h3>Rate Limiter</h3>
-            <p>Design distributed limits for public APIs with shared counters, hot keys, and failure modes.</p>
-            <div class="topic-row">
-              <span>Token bucket</span>
-              <span>Redis</span>
-              <span>Hot keys</span>
-            </div>
-          </article>
-          <article class="question-card locked">
-            <div class="question-topline">
-              <span>Paid library</span>
-              <b>Advanced</b>
-            </div>
-            <h3>AI Agent System Design</h3>
-            <p>Design an AI agent platform with tools, memory, guardrails, evals, and safe termination.</p>
-            <div class="topic-row">
-              <span>Tools</span>
-              <span>Memory</span>
-              <span>Guardrails</span>
-            </div>
-          </article>
-          <article class="question-card locked">
-            <div class="question-topline">
-              <span>Paid library</span>
-              <b>Advanced</b>
-            </div>
-            <h3>Ticketing Flash Sale</h3>
-            <p>Design seat inventory, reservation holds, payment flow, queues, and concurrency control.</p>
-            <div class="topic-row">
-              <span>Inventory</span>
-              <span>Queueing</span>
-              <span>Payments</span>
-            </div>
-          </article>
-        </div>
-        <div class="entitlement-band">
-          <div>
-            <strong>Free</strong>
-            <span>Preview questions and try the practice loop.</span>
-          </div>
-          <div>
-            <strong>Starter / Pro / Elite</strong>
-            <span>Unlock the full question bank, AI mocks, scored reports, and deeper review capacity.</span>
+            <a class="primary-action" href="https://speakup-sd.vercel.app">Open SpeakUp SD</a>
           </div>
         </div>
       </section>
 
-      <section id="practice" class="section split">
+      <section id="library" class="section split compact-section">
         <div class="section-copy">
-          <p class="eyebrow">Practice Loop</p>
-          <h2>System design prep should feel less like guessing and more like reps.</h2>
+          <p class="eyebrow">Question Bank</p>
+          <h2>Classic system design and AI system design in one product.</h2>
           <p>
-            The product is built around a simple loop: answer out loud, externalize the architecture,
-            then inspect the result. It is not a prompt library with a pretty button; it is a practice
-            room for building interview muscle memory.
+            The question bank sits inside the app: users can inspect free preview questions, see locked
+            paid-library prompts, search by topic, and choose a question before entering AI interview practice.
           </p>
         </div>
         <div class="workflow-list">
           <article>
-            <b>Prompt bank</b>
-            <span>Free preview questions plus a paid full library across traditional distributed systems and AI-agent design.</span>
+            <b>Free preview</b>
+            <span>A small set of system design questions is open so users can understand the product before paying.</span>
           </article>
           <article>
-            <b>Voice mock</b>
-            <span>Practice the hard part: explaining assumptions, tradeoffs, and sequencing in real time.</span>
+            <b>Paid full library</b>
+            <span>Starter, Pro, and Elite unlock the full question bank across system design and AI system design.</span>
           </article>
           <article>
-            <b>Feedback report</b>
-            <span>Turn a rough answer into targeted next steps instead of vague “study more” advice.</span>
+            <b>AI-agent design</b>
+            <span>AI Agent System Design is a system design prompt about tools, memory, guardrails, and evals.</span>
           </article>
         </div>
       </section>
 
-      <section id="evidence" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Product Evidence</p>
-          <h2>No raw topic screenshot on the marketing surface.</h2>
+      <section id="practice" class="section split compact-section">
+        <div class="section-copy">
+          <p class="eyebrow">Practice Loop</p>
+          <h2>Browse first. Interview second.</h2>
           <p>
-            The production app screenshot is being refreshed after the new question-bank UI deploys.
-            Until then, this public page uses a clean commercial preview instead of an outdated topic picker.
-          </p>
-        </div>
-        <div class="evidence-grid">
-          <article>
-            <b>Browse first</b>
-            <span>Users can inspect prompt titles, difficulty, and focus areas before starting a mock.</span>
-          </article>
-          <article>
-            <b>Free vs paid is visible</b>
-            <span>Free preview prompts are separated from the paid full library instead of hiding the business model.</span>
-          </article>
-          <article>
-            <b>AI-agent topics are clear</b>
-            <span>AI Agent System Design is framed as a system design prompt, not an ambiguous AI prompt feature.</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section motion">
-        <div>
-          <p class="eyebrow">End-to-end Flow</p>
-          <h2>From prompt to spoken answer to report.</h2>
-          <p>
-            SpeakUp SD is meant for candidates who do not just want a giant list of questions.
-            They can browse first, then practice only the prompts that match their target role.
+            The app separates question discovery from the mock interview flow, closer to how candidates
+            evaluate a serious interview-prep product.
           </p>
         </div>
         <div class="flow-stack">
-          <span>Browse question</span>
-          <span>Unlock full library</span>
-          <span>Run voice mock</span>
-          <span>Review report</span>
+          <span>Browse question bank</span>
+          <span>Select a prompt</span>
+          <span>Run AI interview with whiteboard</span>
+          <span>Review report and next drill</span>
         </div>
       </section>
 
-      <section id="trust" class="section trust">
+      <section id="trust" class="section trust compact-section">
         <div>
-          <p class="eyebrow">Trust Surface</p>
-          <h2>A public product page, not a source-code dump.</h2>
+          <p class="eyebrow">Public Surface</p>
+          <h2>Simple page. Real product behind it.</h2>
           <p>
-            This showcase keeps the product inspectable without exposing private application code,
-            internal specs, credentials, builds, or deployment materials. The visible surface is what
-            a user or reviewer needs to understand the product.
+            This public page introduces the commercial product without pretending to be the product UI
+            or exposing private source code.
           </p>
         </div>
         <a class="primary-action" href="https://speakup-sd.vercel.app">Open SpeakUp SD</a>
