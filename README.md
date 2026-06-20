@@ -28,7 +28,6 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 ├── styles.css              # Responsive visual system for the showcase
 └── assets/
     ├── showcase-preview.png
-    ├── product-flow.gif
     ├── product-question-bank.png
     ├── product-interview-active.png
     ├── product-recording-consent.png
