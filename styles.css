@@ -340,12 +340,6 @@ h2 {
   line-height: 1.45;
 }
 
-.feature-shot:not(.large) img {
-  aspect-ratio: 1 / 1.15;
-  object-fit: cover;
-  object-position: 50% 0;
-}
-
 .split {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
