@@ -13,6 +13,7 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 
 ## What This Repo Demonstrates
 
+- **Real product screenshots** for the question bank, AI interview workspace, consent modal, whiteboard, and reports.
 - **Product positioning** for system design interview practice in the AI-agent era.
 - **Voice-first practice flow** for candidates who need to rehearse architecture explanations, not just read prompt lists.
 - **Whiteboard evidence** as part of the interview-practice artifact.
@@ -26,10 +27,14 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 ├── index.html              # Public GitHub Pages product page
 ├── styles.css              # Responsive visual system for the showcase
 └── assets/
+    ├── showcase-preview.png
+    ├── product-flow.gif
+    ├── product-question-bank.png
+    ├── product-interview-active.png
+    ├── product-recording-consent.png
     ├── product-practice.png
     ├── product-board.png
-    ├── product-reports.png
-    └── product-flow.gif
+    └── product-reports.png
 ```
 
 ## Public Boundary

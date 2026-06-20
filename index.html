@@ -6,12 +6,12 @@
     <title>SpeakUp SD | AI System Design Interview Practice</title>
     <meta
       name="description"
-      content="SpeakUp SD is an AI interview practice product with a question bank across classic system design and AI system design."
+      content="SpeakUp SD is an AI interview practice product with real question-bank, voice interview, whiteboard, consent, and report screens."
     />
     <meta property="og:title" content="SpeakUp SD" />
     <meta
       property="og:description"
-      content="AI interviews with a serious question bank across system design and AI system design."
+      content="Real product screens for AI system design interview practice: question bank, interview workspace, whiteboard, consent, and reports."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./assets/showcase-preview.png" />
@@ -25,66 +25,121 @@
         <span>SpeakUp SD</span>
       </a>
       <nav>
-        <a href="#library">Question bank</a>
-        <a href="#practice">Practice</a>
+        <a href="#screens">Screens</a>
+        <a href="#flow">Flow</a>
         <a href="#trust">Trust</a>
       </nav>
       <a class="header-action" href="https://speakup-sd.vercel.app">Open app</a>
     </header>
 
     <main id="top">
-      <section class="hero hero-simple" aria-labelledby="hero-title">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">AI interview for system design</p>
-          <h1 id="hero-title">AI interviews with a serious question bank.</h1>
+          <p class="eyebrow">Real product screens</p>
+          <h1 id="hero-title">AI interview practice you can actually inspect.</h1>
           <p class="lede">
-            SpeakUp SD helps candidates practice across classic system design and AI system design.
-            Browse the question bank, choose a prompt, then run an AI interview with whiteboard and report.
+            SpeakUp SD combines a serious system design question bank with an AI interview workspace,
+            whiteboard evidence, recording consent, and readiness reports.
           </p>
           <div class="actions">
             <a class="primary-action" href="https://speakup-sd.vercel.app">Open SpeakUp SD</a>
+            <a class="secondary-action" href="#screens">View screens</a>
           </div>
         </div>
+
+        <figure class="hero-media">
+          <img src="./assets/product-flow.gif" alt="Animated SpeakUp SD product flow using real product screens." />
+          <figcaption>
+            <strong>Question bank -> AI interview -> consent -> report</strong>
+            <span>Actual product captures from the practice workflow.</span>
+          </figcaption>
+        </figure>
       </section>
 
-      <section id="library" class="section split compact-section">
-        <div class="section-copy">
-          <p class="eyebrow">Question Bank</p>
-          <h2>Classic system design and AI system design in one product.</h2>
+      <section class="signal-strip" aria-label="Product surfaces">
+        <div>
+          <span>01</span>
+          <strong>Browse</strong>
+          <p>Preview real system design prompts and search for AI-agent design topics.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Interview</strong>
+          <p>Answer out loud while using the whiteboard as interview evidence.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Review</strong>
+          <p>Use reports to see readiness, skill signals, and the next drill.</p>
+        </div>
+      </section>
+
+      <section id="screens" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Actual UI</p>
+          <h2>The public page should show the product, not only describe it.</h2>
           <p>
-            The question bank sits inside the app: users can inspect free preview questions, see locked
-            paid-library prompts, search by topic, and choose a question before entering AI interview practice.
+            These captures show the current product surfaces: question selection, active interview,
+            recording consent, whiteboard, and reports.
           </p>
         </div>
-        <div class="workflow-list">
-          <article>
-            <b>Free preview</b>
-            <span>A small set of system design questions is open so users can understand the product before paying.</span>
-          </article>
-          <article>
-            <b>Paid full library</b>
-            <span>Starter, Pro, and Elite unlock the full question bank across system design and AI system design.</span>
-          </article>
-          <article>
-            <b>AI-agent design</b>
-            <span>AI Agent System Design is a system design prompt about tools, memory, guardrails, and evals.</span>
-          </article>
+
+        <div class="screen-grid">
+          <figure class="screen-card wide">
+            <img src="./assets/product-question-bank.png" alt="SpeakUp SD real question bank with AI Agent System search result." />
+            <figcaption>
+              <strong>Question bank</strong>
+              <span>Searchable classic system design and AI system design prompts before entering the mock.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="screen-card">
+            <img src="./assets/product-interview-active.png" alt="SpeakUp SD active AI interview workspace with timer and whiteboard." />
+            <figcaption>
+              <strong>AI interview workspace</strong>
+              <span>Timed prompt, voice answer area, interview steps, and whiteboard all in one practice surface.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="screen-card">
+            <img src="./assets/product-recording-consent.png" alt="SpeakUp SD recording consent modal before voice answer." />
+            <figcaption>
+              <strong>Recording consent</strong>
+              <span>The product asks for age and recording consent before processing voice answers.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="screen-card">
+            <img src="./assets/product-board.png" alt="SpeakUp SD whiteboard surface for system design diagrams." />
+            <figcaption>
+              <strong>Whiteboard evidence</strong>
+              <span>Candidates can draw architecture while explaining tradeoffs out loud.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="screen-card">
+            <img src="./assets/product-reports.png" alt="SpeakUp SD reports surface with readiness and practice history." />
+            <figcaption>
+              <strong>Reports</strong>
+              <span>Practice history and readiness signals make progress visible after the mock.</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section id="practice" class="section split compact-section">
+      <section id="flow" class="section split compact-section">
         <div class="section-copy">
           <p class="eyebrow">Practice Loop</p>
-          <h2>Browse first. Interview second.</h2>
+          <h2>Browse first. Interview second. Review what happened.</h2>
           <p>
-            The app separates question discovery from the mock interview flow, closer to how candidates
-            evaluate a serious interview-prep product.
+            The product separates question discovery from the mock interview flow, then connects
+            voice practice, whiteboard work, and reporting into one reviewable training loop.
           </p>
         </div>
         <div class="flow-stack">
-          <span>Browse question bank</span>
-          <span>Select a prompt</span>
-          <span>Run AI interview with whiteboard</span>
+          <span>Browse the question bank</span>
+          <span>Select a system design prompt</span>
+          <span>Run an AI interview with whiteboard</span>
           <span>Review report and next drill</span>
         </div>
       </section>
@@ -92,10 +147,10 @@
       <section id="trust" class="section trust compact-section">
         <div>
           <p class="eyebrow">Public Surface</p>
-          <h2>Simple page. Real product behind it.</h2>
+          <h2>A product showcase, not a source-code dump.</h2>
           <p>
-            This public page introduces the commercial product without pretending to be the product UI
-            or exposing private source code.
+            This repository keeps the product inspectable through screenshots and public links
+            without exposing private app source code, credentials, prompts, or operational material.
           </p>
         </div>
         <a class="primary-action" href="https://speakup-sd.vercel.app">Open SpeakUp SD</a>
