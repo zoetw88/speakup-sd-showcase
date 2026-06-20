@@ -240,6 +240,28 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.media-badges {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.media-badges span {
+  padding: 8px 11px;
+  border: 1px solid rgba(217, 210, 203, 0.92);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.08);
+}
+
 .proof-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -462,6 +484,12 @@ footer span {
   .hero-media img,
   .feature-shot img {
     border-radius: 16px;
+  }
+
+  .media-badges {
+    position: static;
+    margin-top: 12px;
+    justify-content: flex-start;
   }
 
   .trust {
