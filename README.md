@@ -9,7 +9,8 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 | Surface | Link |
 |---|---|
 | Canonical public showcase | https://zoetw88.github.io/speakup-sd-showcase/ |
-| Practice app | https://speakup-sd.vercel.app |
+| Free question bank | https://speakupinterview.com/ |
+| Practice app | https://speakupinterview.com/app/ |
 | iOS | Internal TestFlight validation before public App Store release |
 
 ## What This Repo Demonstrates

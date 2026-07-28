@@ -521,6 +521,15 @@ footer span {
     width: 100%;
   }
 
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .actions a {
+    width: 100%;
+  }
+
   h1 {
     font-size: 43px;
   }
