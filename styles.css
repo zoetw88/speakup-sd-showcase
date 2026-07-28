@@ -221,11 +221,93 @@ h2 {
   line-height: 1.45;
 }
 
+.availability-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto 18px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.availability-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.status-dot {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 4px rgba(21, 128, 61, 0.12);
+}
+
+.availability-label {
+  margin-bottom: 4px;
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.availability-status strong {
+  display: block;
+  font-size: 17px;
+}
+
+.availability-status p:last-child {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.availability-strip .secondary-action {
+  flex: 0 0 auto;
+}
+
+.feature-overview {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(72px, 8vw, 104px) 0 0;
+}
+
+.feature-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 24px 64px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.feature-heading .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: -8px;
+}
+
+.feature-heading h2 {
+  max-width: 760px;
+}
+
+.feature-heading > p:last-child {
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
 .signal-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: min(1180px, calc(100% - 36px));
-  margin: 0 auto;
   border: 1px solid var(--line);
   border-radius: 16px;
   background: var(--surface);
@@ -385,6 +467,7 @@ footer span {
   .hero,
   .split,
   .trust,
+  .feature-heading,
   .screen-grid {
     grid-template-columns: 1fr;
   }
@@ -417,9 +500,25 @@ footer span {
   }
 
   .hero,
+  .availability-strip,
+  .feature-overview,
   .section,
   .signal-strip {
     width: min(100% - 28px, 1180px);
+  }
+
+  .feature-overview .signal-strip {
+    width: 100%;
+  }
+
+  .availability-strip {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .availability-strip .secondary-action {
+    width: 100%;
   }
 
   h1 {

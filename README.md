@@ -10,14 +10,18 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 |---|---|
 | Canonical public showcase | https://zoetw88.github.io/speakup-sd-showcase/ |
 | Practice app | https://speakup-sd.vercel.app |
+| iOS | Internal TestFlight validation before public App Store release |
 
 ## What This Repo Demonstrates
 
 - **Real product screenshots** for the question bank, AI interview workspace, consent modal, whiteboard, and reports.
 - **Product positioning** for system design interview practice in the AI-agent era.
-- **Voice-first practice flow** for candidates who need to rehearse architecture explanations, not just read prompt lists.
-- **Whiteboard evidence** as part of the interview-practice artifact.
-- **Readiness-focused reports** that turn a spoken answer into visible feedback and next practice targets.
+- **Unlimited no-AI Open Practice** with a timer, local recording, and desktop whiteboard.
+- **Four-phase voice practice** across requirements, high-level design, technical deep dive, and trade-offs.
+- **Simulation and Guided Practice** paths, with optional between-phase coach reminders.
+- **Voice and whiteboard evidence** kept together for review.
+- **One combined report and next drill** that turn a completed interview into a focused follow-up.
+- **Honest availability status** for the live web product and private iOS beta.
 - **Trust boundary** between public showcase content and private application code.
 
 ## Showcase Structure
@@ -29,6 +33,7 @@ SpeakUp SD helps candidates turn interview preparation into a repeatable loop: c
 └── assets/
     ├── showcase-preview.png
     ├── product-question-bank.png
+    ├── product-question-bank-list.png
     ├── product-interview-active.png
     ├── product-recording-consent.png
     ├── product-practice.png
