@@ -59,7 +59,7 @@ SpeakUp SD is built around a simple product belief: system design confidence com
 
 The showcase focuses on the visible user experience rather than the private implementation. The product itself includes practice prompts, spoken-answer flow, whiteboard work, reports, progress surfaces, and trust/legal pages.
 
-Built by **[Zoe](https://zoe-site-ten.vercel.app)** — practical AI products where evaluation, privacy, and backend reality are part of the product design.
+Built by **[Zoe](https://zoe-builds.com)** — practical AI products where evaluation, privacy, and backend reality are part of the product design.
 
 ## Maintenance
 
